@@ -1,15 +1,15 @@
 class OtelLogger < Formula
   desc "OTLP receiver that logs Claude Code / Codex telemetry to stdout and JSONL"
   homepage "https://github.com/owayo/otel-logger"
-  url "https://github.com/owayo/otel-logger/archive/refs/tags/v26.5.100.tar.gz"
-  sha256 "b0db1d05208a4c3bf201aa20609a571e6e1f160869e63c736bb5303af804aa66"
+  url "https://github.com/owayo/otel-logger/archive/refs/tags/v26.5.101.tar.gz"
+  sha256 "9ebd9ce3682b37f9fa37c983d43635941455b7bfa4c8e8869feface69be8c213"
   license "MIT"
 
   bottle do
-    root_url "https://github.com/owayo/otel-logger/releases/download/v26.5.100"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "8ae46e512d86d35b626a70216715399ff819fdf347ba22bec74e950661d2af50"
-    sha256 cellar: :any_skip_relocation, sonoma: "a7c487a02e5cbbdb161f675dc65f34f1398afe4ffc18d0e0fe29da67b3b90010"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "569d094cd5e85267566f26b3093b0f38e87eadca7a14261205719690a8d30fc7"
+    root_url "https://github.com/owayo/otel-logger/releases/download/v26.5.101"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "8cc2dc43a1a9eca4288fdd1c293396687d488d148c92ea0110dba1f22e1e57fd"
+    sha256 cellar: :any_skip_relocation, sonoma: "d35611020aaab683da4886a2898a2e1a60d46d986265d005cb101dff9967b09c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "c0f7aa9459486bd986172dbf5907f971812ec1ea066841139f6106dca4044687"
   end
 
   depends_on "rust" => :build
